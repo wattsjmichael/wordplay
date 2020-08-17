@@ -5,15 +5,15 @@ $(document).ready(function() {
     const words = inputSent.split(" ");
     let newArray = [];
 
-    words.forEach(function(element) {
-      if (element.length >= 3) {
-        newArray.push(element);
+    words.forEach(function(word) {
+      if (word.length >= 3) {
+        newArray.push(word);
       }
     });
     newArray.reverse();
+    let joinArray = newArray.join(" ");
 
-
-    $("#result").text(newArray);
+    $("#result").text(joinArray);
 
   });
 })
